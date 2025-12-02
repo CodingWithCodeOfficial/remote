@@ -10,6 +10,7 @@ function FoodAdd() {
   const [selectedTable, setSelectedTable] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");  // State for search term
+  const navigate = useNavigate();
   const foodCollectionRef = collection(db, "food");
   const displayFoodCollectionRef = collection(db, "display-food");
 
